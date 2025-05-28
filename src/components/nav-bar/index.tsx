@@ -1,4 +1,4 @@
-import useTitlePageStore from "@/storage";
+import useGlobalStore from "@/storage";
 import React, { Fragment, useEffect } from "react";
 import type { NavBarComponent } from "./types";
 
@@ -10,7 +10,8 @@ const getAnchor = () => {
 };
 
 const NavBar: NavBarComponent = ({ items }) => {
-  const { currentTab, setCurrentTab } = useTitlePageStore();
+  const currentTab = useGlobalStore((state) => state.currentTab);
+  const setCurrentTab = useGlobalStore((state) => state.setCurrentTab);
 
   useEffect(() => {
     const anchor = getAnchor();
@@ -20,7 +21,7 @@ const NavBar: NavBarComponent = ({ items }) => {
   }, []);
 
   return (
-    <nav className="flex gap-x-2 text-base md:text-lg border-1 bg-white border-gray-300 rounded-xl p-2.5 font-mono animate-fade-in">
+    <nav className="flex gap-x-2 text-base md:text-lg border-1 bg-white dark:bg-black border-gray-300 rounded-xl p-2.5 font-mono animate-fade-in">
       {items.map(({ href, text }, i) => {
         const isCurrent = currentTab === href ? "text-sky-500" : "";
         const isNotLast = i !== items.length - 1;

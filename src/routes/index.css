@@ -8,10 +8,12 @@
   }
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --animate-typewriter: typewriter 2s steps(18) forwards;
-  --animate-caret: typewriter 2s steps(18) forwards, blink 1s steps(18) infinite
-    2s;
+  --animate-caret: typewriter 2s steps(18) forwards,
+    blink 1s steps(18) infinite 2s;
   --animate-fade-in: fade-in 0.2s ease-in-out forwards;
   --animate-fade-out: fade-out 0.2s ease-in-out forwards;
   --animate-open-chevron: open-chevron 0.2s ease-in-out forwards;
