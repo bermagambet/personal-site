@@ -30,7 +30,7 @@ const AccordeonItem: AccordeonItemComponent = ({
       refItem.current?.classList.add("animate-fade-in");
       setOpen(true);
       setTimeout(() => {
-        refItem?.current?.scrollIntoView({
+        refChevron?.current?.scrollIntoView({
           behavior: "smooth",
           block: "start",
           inline: "nearest",

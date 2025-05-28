@@ -21,12 +21,22 @@ after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-blac
     <div className="flex flex-col-reverse md:flex-col gap-y-18 justify-center items-center">
       <div className="flex flex-col md:flex-row gap-x-4 font-mono">
         <Button
-          text="Telegram: @opening_bracket"
+          text={
+            <span className="flex flex-row md:flex-col gap-x-2 gap-y-2">
+              <span>Telegram:</span>
+              <span>@opening_bracket</span>
+            </span>
+          }
           link="https://t.me/opening_bracket"
           simple
         />
         <Button
-          text="Discord: kazakh_camry"
+          text={
+            <span className="flex flex-row md:flex-col gap-x-2 gap-y-2">
+              <span>Discord:</span>
+              <span>kazakh_camry</span>
+            </span>
+          }
           link="discord://-/channels/@me/228793567991037952"
           simple
         />

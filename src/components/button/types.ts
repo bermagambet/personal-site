@@ -1,11 +1,11 @@
-import type { FunctionComponent } from 'react';
+import type { FunctionComponent, ReactNode } from "react";
 
 type ButtonProps = {
-  text: string;
+  text: string | ReactNode;
   link: string;
   simple?: boolean;
   Icon?: React.ForwardRefExoticComponent<
-    Omit<React.SVGProps<SVGSVGElement>, 'ref'> & {
+    Omit<React.SVGProps<SVGSVGElement>, "ref"> & {
       title?: string;
       titleId?: string;
     } & React.RefAttributes<SVGSVGElement>

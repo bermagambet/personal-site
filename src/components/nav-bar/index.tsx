@@ -20,7 +20,7 @@ const NavBar: NavBarComponent = ({ items }) => {
   }, []);
 
   return (
-    <nav className="flex gap-x-2 text-base md:text-lg border-1 bg-white border-gray-300 rounded-xl p-2.5 font-mono">
+    <nav className="flex gap-x-2 text-base md:text-lg border-1 bg-white border-gray-300 rounded-xl p-2.5 font-mono animate-fade-in">
       {items.map(({ href, text }, i) => {
         const isCurrent = currentTab === href ? "text-sky-500" : "";
         const isNotLast = i !== items.length - 1;
