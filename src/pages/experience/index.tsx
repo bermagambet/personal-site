@@ -1,5 +1,5 @@
-import React from 'react';
-import Accordeon from '../../components/accordeon';
+import React from "react";
+import Accordeon from "../../components/accordeon";
 
 const Experience = () => {
   return (
@@ -8,12 +8,12 @@ const Experience = () => {
         <Accordeon
           items={[
             {
-              title: 'HalykBank, Kazakhstan',
+              title: "HalykBank, Kazakhstan",
               elements: [
                 {
                   label: [
-                    <span>Frontend TeamLead</span>,
-                    <span>08/2024 – present</span>,
+                    <span key={1}>Frontend TeamLead</span>,
+                    <span key={2}>08/2024 – present</span>,
                   ],
                   children: (
                     <ul className="list-disc pl-8">
@@ -21,7 +21,7 @@ const Experience = () => {
                         <p>
                           Led a team of 11 frontend developers over 10 months to
                           deliver 18 business-critical processes across multiple
-                          banking domains, contributing to a{' '}
+                          banking domains, contributing to a{" "}
                           <span className="font-bold">
                             5% increase in overall bank revenue.
                           </span>
@@ -33,12 +33,12 @@ const Experience = () => {
                           performance monitoring with automated webhooks,
                           <span className="font-bold">
                             {
-                              ' reducing production bugs and build failures by 12% '
+                              " reducing production bugs and build failures by 12% "
                             }
                           </span>
                           while
                           <span className="font-bold">
-                            {' improving Lighthouse scores by 8% '}
+                            {" improving Lighthouse scores by 8% "}
                           </span>
                           across all projects.
                         </p>
@@ -49,7 +49,7 @@ const Experience = () => {
                           for frontend outages by developing custom Ivanti APIs
                           and a JavaScript logging library,
                           <span className="font-bold">
-                            {' reducing average resolution time by 45%.'}
+                            {" reducing average resolution time by 45%."}
                           </span>
                         </p>
                       </li>
@@ -58,7 +58,7 @@ const Experience = () => {
                           Implemented advanced PWA features with Workbox in
                           high-traffic React apps,
                           <span className="font-bold">
-                            {' decreasing repeat load times by 3.5s '}
+                            {" decreasing repeat load times by 3.5s "}
                           </span>
                           and enhancing UX via runtime caching, fallback routes,
                           Push API, and Notifications API.
@@ -69,8 +69,8 @@ const Experience = () => {
                 },
                 {
                   label: [
-                    <span>Senior Frontend Developer</span>,
-                    <span>11/2023 – 08/2024</span>,
+                    <span key={1}>Senior Frontend Developer</span>,
+                    <span key={2}>11/2023 – 08/2024</span>,
                   ],
                   children: (
                     <ul className="list-disc pl-8">
@@ -81,7 +81,7 @@ const Experience = () => {
                           enabling recovery after incidents and
                           <span className="font-bold">
                             {
-                              ' reducing average customer processing time by 5 minutes.'
+                              " reducing average customer processing time by 5 minutes."
                             }
                           </span>
                         </p>
@@ -93,7 +93,7 @@ const Experience = () => {
                           routing, and layout components,
                           <span className="font-bold">
                             {
-                              ' reducing task completion time for developers by at least 2 hours per project.'
+                              " reducing task completion time for developers by at least 2 hours per project."
                             }
                           </span>
                         </p>
@@ -104,7 +104,7 @@ const Experience = () => {
                           quality, enforce best practices, and reduce
                           post-deployment bugs, contributing to a
                           <span className="font-bold">
-                            {' 15% decrease in QA issues over two quarters.'}
+                            {" 15% decrease in QA issues over two quarters."}
                           </span>
                         </p>
                       </li>
@@ -114,7 +114,7 @@ const Experience = () => {
                           a modular micro-frontend architecture with Modern.js
                           and Module Federation,
                           <span className="font-bold">
-                            {' cutting overall build times by 90% '}
+                            {" cutting overall build times by 90% "}
                           </span>
                           and enabling independent team deployments.
                         </p>
@@ -124,8 +124,8 @@ const Experience = () => {
                 },
                 {
                   label: [
-                    <span>Middle Frontend Developer</span>,
-                    <span>09/2022 – 11/2023</span>,
+                    <span key={1}>Middle Frontend Developer</span>,
+                    <span key={2}>09/2022 – 11/2023</span>,
                   ],
                   children: (
                     <ul className="list-disc pl-8">
@@ -135,7 +135,7 @@ const Experience = () => {
                           automate 10 banking business processes, contributing
                           to
                           <span className="font-bold">
-                            {' over 1 million USD in value '}
+                            {" over 1 million USD in value "}
                           </span>
                           generated within a year.
                         </p>
@@ -147,7 +147,7 @@ const Experience = () => {
                           loading to
                           <span className="font-bold">
                             {
-                              ' reduce bundle size and initial load times by 80%. '
+                              " reduce bundle size and initial load times by 80%. "
                             }
                           </span>
                         </p>
@@ -158,7 +158,7 @@ const Experience = () => {
                           Workers and stale-while-revalidate patterns, reducing
                           repeated API calls from
                           <span className="font-bold">
-                            {' over 10,000 to fewer than 100 per month '}
+                            {" over 10,000 to fewer than 100 per month "}
                           </span>
                           in front-facing banking applications.
                         </p>
@@ -169,12 +169,12 @@ const Experience = () => {
               ],
             },
             {
-              title: 'iSATE, Kazakhstan',
+              title: "iSATE, Kazakhstan",
               elements: [
                 {
                   label: [
-                    <span>Junior Frontend Developer</span>,
-                    <span>09/2020 – 09/2022</span>,
+                    <span key={1}>Junior Frontend Developer</span>,
+                    <span key={2}>09/2020 – 09/2022</span>,
                   ],
                   children: (
                     <ul className="list-disc pl-8">
@@ -182,11 +182,11 @@ const Experience = () => {
                         <p>
                           Developed React SPFx web parts for the customer’s
                           intranet portal, enabling self-service for nearly
-                          <span className="font-bold">{' 15% '}</span>
+                          <span className="font-bold">{" 15% "}</span>
                           of HR-related queries and
                           <span className="font-bold">
                             {
-                              ' saving HR managers approximately 3 hours per week.'
+                              " saving HR managers approximately 3 hours per week."
                             }
                           </span>
                         </p>
@@ -197,7 +197,7 @@ const Experience = () => {
                           class-based to function-based React components and
                           introducing memoization,
                           <span className="font-bold">
-                            {' cutting load times by 11% '}
+                            {" cutting load times by 11% "}
                           </span>
                           and improving user experience across internal
                           platforms.
@@ -209,7 +209,7 @@ const Experience = () => {
                           TypeScript into core components, leading to faster
                           onboarding for new developers and
                           <span className="font-bold">
-                            {' reducing monthly bug tickets by 20%.'}
+                            {" reducing monthly bug tickets by 20%."}
                           </span>
                         </p>
                       </li>
@@ -219,12 +219,12 @@ const Experience = () => {
               ],
             },
             {
-              title: 'KBTU, Kazakhstan',
+              title: "KBTU, Kazakhstan",
               elements: [
                 {
                   label: [
-                    <span>Senior-Lecturer</span>,
-                    <span>09/2022 – 06/2025</span>,
+                    <span key={1}>Senior-Lecturer</span>,
+                    <span key={2}>09/2022 – 06/2025</span>,
                   ],
                   collapsible: false,
                 },

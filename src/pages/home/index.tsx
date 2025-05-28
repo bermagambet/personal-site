@@ -1,6 +1,6 @@
-import { ArrowDownTrayIcon, ArrowRightIcon } from '@heroicons/react/20/solid';
-import React from 'react';
-import Button from '../../components/button';
+import { ArrowDownTrayIcon, ArrowRightIcon } from "@heroicons/react/20/solid";
+import React from "react";
+import Button from "../../components/button";
 
 const Home = () => (
   <div className="h-full flex flex-col gap-y-18 justify-center items-center">
@@ -35,7 +35,7 @@ after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-blac
         <Button
           text="Download CV"
           Icon={ArrowDownTrayIcon}
-          link="https://github.com/bermagambet"
+          link="https://docs.google.com/document/d/11KBDuBSqOglYkXPk8c703hXosLXdm2USsUYN8zRLkPE/edit?usp=sharing"
         />
         <Button
           text="LinkedIn"
