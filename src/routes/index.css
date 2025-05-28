@@ -10,6 +10,16 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+.dark {
+  background-color: black;
+  transition: background 0.2s;
+}
+
+.light {
+  background-color: white;
+  transition: background 0.2s;
+}
+
 @theme {
   --animate-typewriter: typewriter 2s steps(18) forwards;
   --animate-caret: typewriter 2s steps(18) forwards,
