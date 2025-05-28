@@ -52,13 +52,13 @@ const AccordeonItem: AccordeonItemComponent = ({
   return (
     <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-y-0">
       <div
-        className={`w-full md:w-auto col-span-1 order-1 md:order-0 place-self-start grid grid-cols-3 md:flex md:gap-x-4 items-center ${
+        className={`w-full md:w-auto col-span-1 order-1 md:order-0 place-self-start grid grid-cols-4 md:flex md:gap-x-4 justify-center items-center ${
           collapsible ? "cursor-pointer" : "cursor-default"
         }`}
         onClick={handleOnClick}
         onKeyDown={handleOnKeyDown}
       >
-        <div className="col-span-1 order-1 place-self-end md:order-0">
+        <div className="col-span-1 order-1 place-self-end self-center md:place-self-auto-center md:order-0">
           {collapsible ? (
             <ChevronDownIcon
               ref={refChevron}
@@ -68,7 +68,7 @@ const AccordeonItem: AccordeonItemComponent = ({
             <AcademicCapIcon className="size-6 md:size-5" />
           )}
         </div>
-        <span className="col-span-2 order-0 place-self-start">{label[0]}</span>
+        <span className="col-span-3 order-0 place-self-start">{label[0]}</span>
       </div>
       <div className="col-span-1 order-0 md:order-1 place-self-start md:place-self-end text-lg md:text-2xl font-semibold md:font-normal">
         {label[1]}
