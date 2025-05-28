@@ -3,7 +3,7 @@ import Accordeon from "../../components/accordeon";
 
 const Education = () => {
   return (
-    <div className="animate-fade-in flex flex-col gap-y-8 justify-center items-start mt-[15%] md:mt-0">
+    <div className="animate-fade-in flex flex-col gap-y-8 justify-center items-start py-[10%] md:pt-0">
       <div className="flex flex-col gap-y-2">
         <Accordeon
           items={[

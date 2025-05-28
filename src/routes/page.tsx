@@ -16,11 +16,11 @@ const Index = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
       <main>
-        <div className="h-screen flex flex-col-reverse md:flex-col gap-y-10 justify-center items-center">
-          <div className="h-[10%] max-h-[10%] md:h-[15%] md:max-h-[15%] mb-[10%] md:mb-0 md:mt-15">
+        <div className="h-[100vh] flex flex-col justify-center items-center">
+          <div className="h-[7vh] mt-15">
             <NavBar items={navItems} />
           </div>
-          <div className="h-[80%] max-h-[80%] md:h-[80%] md:max-h-[80%] overflow-auto px-10 pb-10">
+          <div className="h-[80vh] overflow-auto px-10 pb-10">
             <Page />
           </div>
         </div>

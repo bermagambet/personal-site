@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const About = () => (
-  <div className="h-full md:h-auto animate-fade-in flex flex-col gap-y-8 justify-center items-center text-xl md:text-xl lg:text-2xl">
+  <div className="h-full md:h-auto animate-fade-in flex flex-col gap-y-8 text-xl md:text-xl lg:text-2xl justify-center items-start py-[10%] md:pt-0">
     <p className="text-center md:w-[50%]">
       Experienced Frontend Team Lead with a PhD in progress and over 4 years in
       React, TypeScript, and modern web technologies. Proven track record at
