@@ -4,8 +4,8 @@ import { appTools, defineConfig } from "@modern-js/app-tools";
 export default defineConfig({
   html: {
     title: "Bermagambet Duisek - CV",
-    favicon: "./src/assets/icon.svg",
-    appIcon: "./src/assets/icon.svg",
+    // favicon: "./src/assets/icon.svg",
+    // appIcon: "./src/assets/icon.svg",
     meta: {
       description: "Information about me and my experience",
     },

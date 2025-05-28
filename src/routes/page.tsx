@@ -1,9 +1,9 @@
-import { Helmet } from '@modern-js/runtime/head';
+import { Helmet } from "@modern-js/runtime/head";
 
-import './index.css';
-import { NavBar } from '@/components';
-import { currentPage, navItems } from '@/dictionaries';
-import useTitlePageStore from '@/storage';
+import "./index.css";
+import { NavBar } from "@/components";
+import { currentPage, navItems } from "@/dictionaries";
+import useTitlePageStore from "@/storage";
 
 const Index = () => {
   const { currentTab } = useTitlePageStore();
@@ -20,7 +20,7 @@ const Index = () => {
           <div className="h-[10%] md:h-[15%] md:mt-15">
             <NavBar items={navItems} />
           </div>
-          <div className="h-[85%] overflow-auto px-10 pb-10">
+          <div className="h-[85%] md:h-[80%] overflow-auto px-10 pb-10">
             <Page />
           </div>
         </div>
