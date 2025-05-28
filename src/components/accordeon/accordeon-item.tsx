@@ -13,6 +13,7 @@ const AccordeonItem: AccordeonItemComponent = ({
 
   const refChevron = useRef<SVGSVGElement>(null);
   const refItem = useRef<HTMLDivElement>(null);
+  const labelItem = useRef<HTMLDivElement>(null);
 
   const switchAccordeon = () => {
     if (open) {
@@ -30,7 +31,7 @@ const AccordeonItem: AccordeonItemComponent = ({
       refItem.current?.classList.add("animate-fade-in");
       setOpen(true);
       setTimeout(() => {
-        refChevron?.current?.scrollIntoView({
+        labelItem?.current?.scrollIntoView({
           behavior: "smooth",
           block: "start",
           inline: "nearest",
@@ -70,7 +71,10 @@ const AccordeonItem: AccordeonItemComponent = ({
         </div>
         <span className="col-span-3 order-0 place-self-start">{label[0]}</span>
       </div>
-      <div className="col-span-1 order-0 md:order-1 place-self-start md:place-self-end text-lg md:text-2xl font-semibold md:font-normal">
+      <div
+        ref={labelItem}
+        className="col-span-1 order-0 md:order-1 place-self-start md:place-self-end text-lg md:text-2xl font-semibold md:font-normal"
+      >
         {label[1]}
       </div>
       <div
