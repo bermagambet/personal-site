@@ -9,5 +9,14 @@ export default defineConfig({
     appTools({
       bundler: 'rspack', // Set to 'webpack' to enable webpack
     }),
+    // tailwindcssPlugin(),
   ],
+  tools: {
+    tailwindcss: {},
+    postcss: {
+      postcssOptions: {
+        plugins: [require('@tailwindcss/postcss')],
+      },
+    },
+  },
 });
