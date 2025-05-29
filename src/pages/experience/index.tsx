@@ -9,7 +9,7 @@ const Experience = () => {
           <span className="font-bold">Programming languages:</span> JavaScript,
           TypeScript
         </p>
-        <p className="text-lg md:text-2xl font-semibold md:font-normal">
+        <div className="text-lg md:text-2xl font-semibold md:font-normal">
           <span className="font-bold">Technologies:</span>
           <p>
             React, Next.js, Modern.js, Redux, Zustand, <br />
@@ -17,7 +17,7 @@ const Experience = () => {
             Jest, Storybook, Cypress, <br />
             Webpack, Rollup, Parcel, Gulp, Workbox
           </p>
-        </p>
+        </div>
       </div>
       <div className="flex flex-col gap-y-2">
         <Accordeon

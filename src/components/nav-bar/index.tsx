@@ -16,7 +16,7 @@ const NavBar: NavBarComponent = ({ items }) => {
   useEffect(() => {
     const anchor = getAnchor();
     if (anchor) {
-      setCurrentTab(`#${anchor}`);
+      setCurrentTab(`#${anchor.toLocaleLowerCase()}`);
     }
   }, []);
 
@@ -34,9 +34,6 @@ const NavBar: NavBarComponent = ({ items }) => {
                 {text}
               </p>
             </a>
-            {/* {isNotLast && (
-              <div className="inline-block h-full  min-h-[1em] w-0.25 self-stretch bg-gray-300" />
-            )} */}
             {isNotLast && <span>-</span>}
           </Fragment>
         );

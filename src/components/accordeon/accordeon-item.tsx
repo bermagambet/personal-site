@@ -16,6 +16,7 @@ const AccordeonItem: AccordeonItemComponent = ({
   const labelItem = useRef<HTMLDivElement>(null);
 
   const switchAccordeon = () => {
+    if (!collapsible) return;
     if (open) {
       refChevron.current?.classList.remove("animate-open-chevron");
       refChevron.current?.classList.add("animate-close-chevron");

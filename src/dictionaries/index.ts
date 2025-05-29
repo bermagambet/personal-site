@@ -1,35 +1,37 @@
-import { About, Education, Experience, Home } from '@/pages';
-import type { FunctionComponent } from 'react';
+import { About, Education, Experience, Home } from "@/pages";
+import type { FunctionComponent } from "react";
 
 const navItems = [
   {
-    href: '#Home',
-    text: 'Home',
+    href: "#home",
+    text: "Home",
   },
   {
-    href: '#Experience',
-    text: 'Experience',
+    href: "#experience",
+    text: "Experience",
   },
   {
-    href: '#Education',
-    text: 'Education',
+    href: "#education",
+    text: "Education",
   },
   {
-    href: '#About',
-    text: 'About',
+    href: "#about",
+    text: "About",
   },
 ];
 
 const currentPage: {
-  '#Home': FunctionComponent<any>;
-  '#Experience': FunctionComponent<any>;
-  '#Education': FunctionComponent<any>;
-  '#About': FunctionComponent<any>;
+  "#home": FunctionComponent<any>;
+  "#experience": FunctionComponent<any>;
+  "#education": FunctionComponent<any>;
+  "#about": FunctionComponent<any>;
 } = {
-  '#Home': Home,
-  '#Experience': Experience,
-  '#Education': Education,
-  '#About': About,
+  "#home": Home,
+  "#experience": Experience,
+  "#education": Education,
+  "#about": About,
 };
 
-export { navItems, currentPage };
+const swipeOrder = ["#home", "#experience", "#education", "#about"];
+
+export { navItems, currentPage, swipeOrder };
