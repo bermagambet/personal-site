@@ -3,7 +3,22 @@ import Accordeon from "../../components/accordeon";
 
 const Experience = () => {
   return (
-    <div className="animate-fade-in flex flex-col gap-y-8 justify-center items-start py-[10%] md:pt-0">
+    <div className="animate-fade-in flex flex-col gap-y-8 justify-center items-start mt-[5vh] mb-[15px]">
+      <div className="flex flex-col gap-y-2">
+        <p className="text-lg md:text-2xl font-semibold md:font-normal">
+          <span className="font-bold">Programming languages:</span> JavaScript,
+          TypeScript
+        </p>
+        <p className="text-lg md:text-2xl font-semibold md:font-normal">
+          <span className="font-bold">Technologies:</span>
+          <p>
+            React, Next.js, Modern.js, Redux, Zustand, <br />
+            CSS modules, Tailwind CSS, Sass, Less, MUI, AntDesign, <br />
+            Jest, Storybook, Cypress, <br />
+            Webpack, Rollup, Parcel, Gulp, Workbox
+          </p>
+        </p>
+      </div>
       <div className="flex flex-col gap-y-2">
         <Accordeon
           items={[

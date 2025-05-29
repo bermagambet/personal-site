@@ -3,7 +3,40 @@ import Accordeon from "../../components/accordeon";
 
 const Education = () => {
   return (
-    <div className="animate-fade-in flex flex-col gap-y-8 justify-center items-start py-[10%] md:pt-0">
+    <div className="animate-fade-in flex flex-col gap-y-8 justify-center items-start mt-[5vh] mb-[15px]">
+      <div className="flex flex-col gap-y-2">
+        <p className="text-lg md:text-2xl font-semibold md:font-normal">
+          <span className="font-bold">Publications:</span>
+          <p>
+            <ol className="list-decimal">
+              <li>
+                <span className="font-semibold">
+                  Duisek, B. E., Sarsembin, D. D., & Abdurazak, K. A. (2023).
+                </span>
+                <br />
+                COMPARISON AND ANALYSIS OF DIFFERENT MACHINE LEARNING METHODS ON
+                <br />
+                ASTEROID DIAMETER PREDICTIONS BASED ON THE NASA SMALL CELESTIAL
+                <br />
+                BODIES DATABASE.
+                <p className="italic">
+                  {
+                    " Herald of Kazakh-British Technical University, 20(3), 7–16. "
+                  }
+                </p>
+                <a
+                  href="https://doi.org/10.55452/1998-6688-2023-20-3-7-16"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sky-500 hover:text-sky-300"
+                >
+                  https://doi.org/10.55452/1998-6688-2023-20-3-7-16
+                </a>
+              </li>
+            </ol>
+          </p>
+        </p>
+      </div>
       <div className="flex flex-col gap-y-2">
         <Accordeon
           items={[

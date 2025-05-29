@@ -4,7 +4,7 @@ import Button from "../../components/button";
 import ThemeButton from "@/components/theme-button";
 
 const Home = () => (
-  <div className="h-full flex flex-col gap-y-18 justify-start md:justify-center items-center py-[10%] md:py-0">
+  <div className="animate-fade-in flex flex-col gap-y-24 justify-center items-center mt-[5vh] mb-[15px]">
     <div className="flex flex-col gap-y-2 justify-center items-center">
       <h1
         id="Home"
@@ -43,6 +43,7 @@ after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-blac
         />
       </div>
       <div className="flex flex-col gap-y-4 justify-center items-center lg:gap-x-4 font-mono">
+        <ThemeButton />
         <div className="grid grid-cols-2 gap-x-2 gap-y-2 lg:grid-cols-4">
           <Button
             text="GDrive CV"
@@ -65,7 +66,6 @@ after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-blac
             link="https://leetcode.com/u/bermagambetd/"
           />
         </div>
-        <ThemeButton />
       </div>
     </div>
   </div>

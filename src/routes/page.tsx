@@ -18,10 +18,10 @@ const Index = () => {
       </Helmet>
       <main className={theme}>
         <div className="h-[100vh] flex flex-col justify-center items-center dark:bg-black dark:text-white">
-          <div className="h-[7vh] mt-15">
+          <div className="h-fit my-[15px]">
             <NavBar items={navItems} />
           </div>
-          <div className="h-[80vh] overflow-auto px-10 pb-10">
+          <div className="min-h-[80vh] max-w-[90vw] overflow-y-auto px-[10px] py-[10px]">
             <Page />
           </div>
         </div>
