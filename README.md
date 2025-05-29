@@ -1,4 +1,8 @@
-# Modern.js App
+# TalwindCSS + Modern.js personal webpage
+## [URL](http://bermagambet.com)
+
+![Screenshot](./.readme/image.png)
+
 
 ## Setup
 
