@@ -4,12 +4,22 @@ import "./index.css";
 import { NavBar } from "@/components";
 import { currentPage, navItems } from "@/dictionaries";
 import useGlobalStore from "@/storage";
-import { useMemo } from "react";
+import { useEffect, useRef } from "react";
 
 const Index = () => {
   const currentTab = useGlobalStore((state) => state.currentTab);
   const theme = useGlobalStore((state) => state.theme);
   const Page = currentPage[currentTab];
+
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    containerRef?.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  }, [currentTab]);
 
   return (
     <div>
@@ -17,7 +27,10 @@ const Index = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
       <main className={theme}>
-        <div className="h-[100vh] flex flex-col justify-center items-center dark:bg-black dark:text-white">
+        <div
+          ref={containerRef}
+          className="h-[100vh] flex flex-col justify-center items-center dark:bg-black dark:text-white"
+        >
           <div className="h-fit my-[15px]">
             <NavBar items={navItems} />
           </div>
