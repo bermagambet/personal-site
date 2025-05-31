@@ -1,5 +1,6 @@
-import Accordeon from './accordeon';
-import Button from './button';
-import NavBar from './nav-bar';
+import Accordeon from "./accordeon";
+import Anchor from "./anchor";
+import Button from "./button";
+import NavBar from "./nav-bar";
 
-export { Button, NavBar, Accordeon };
+export { Button, NavBar, Anchor, Accordeon };

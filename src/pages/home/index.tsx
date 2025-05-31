@@ -1,7 +1,8 @@
+import { Anchor } from "@/components";
+import ThemeButton from "@/components/theme-button";
 import { ArrowRightIcon } from "@heroicons/react/20/solid";
 import React from "react";
 import Button from "../../components/button";
-import ThemeButton from "@/components/theme-button";
 
 const Home = () => (
   <div className="animate-fade-in flex flex-col gap-y-24 justify-center items-center mt-[5vh] mb-[15px]">
@@ -20,27 +21,19 @@ after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-blac
       </div>
     </div>
     <div className="flex flex-col-reverse md:flex-col gap-y-18 justify-center items-center">
-      <div className="flex flex-col md:flex-row gap-x-4 font-mono">
-        <Button
-          text={
-            <span className="flex flex-row md:flex-col gap-x-2 gap-y-2">
-              <span>Telegram:</span>
-              <span>@opening_bracket</span>
-            </span>
-          }
-          link="https://t.me/opening_bracket"
-          simple
-        />
-        <Button
-          text={
-            <span className="flex flex-row md:flex-col gap-x-2 gap-y-2">
-              <span>Discord:</span>
-              <span>kazakh_camry</span>
-            </span>
-          }
-          link="discord://-/channels/@me/228793567991037952"
-          simple
-        />
+      <div className="flex flex-col md:flex-row gap-x-8 gap-y-8 font-mono">
+        <Anchor href="https://t.me/opening_bracket">
+          <span className="flex flex-row md:flex-col gap-x-2 gap-y-2">
+            <span>Telegram:</span>
+            <span>@opening_bracket</span>
+          </span>
+        </Anchor>
+        <Anchor href="discord://-/channels/@me/228793567991037952">
+          <span className="flex flex-row md:flex-col gap-x-2 gap-y-2">
+            <span>Discord:</span>
+            <span>kazakh_camry</span>
+          </span>
+        </Anchor>
       </div>
       <div className="flex flex-col gap-y-4 justify-center items-center lg:gap-x-4 font-mono">
         <ThemeButton />

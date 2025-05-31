@@ -1,6 +1,6 @@
-import React, { useMemo } from "react";
-import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 import useGlobalStore from "@/storage";
+import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
+import React, { useMemo } from "react";
 
 const ThemeButton = () => {
   const theme = useGlobalStore((state) => state.theme);
