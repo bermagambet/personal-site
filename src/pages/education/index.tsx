@@ -1,10 +1,11 @@
 import { Anchor } from "@/components";
+import { withPage } from "@/hooks";
 import React from "react";
 import Accordeon from "../../components/accordeon";
 
 const Education = () => {
   return (
-    <div className="animate-fade-in flex flex-col gap-y-8 justify-center items-start mt-[2vh] md:mt-[5vh] mb-[15px]">
+    <>
       <div className="flex flex-col gap-y-2">
         <Accordeon
           items={[
@@ -71,8 +72,8 @@ const Education = () => {
           </ol>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
-export default Education;
+export default withPage(Education, "items-start");

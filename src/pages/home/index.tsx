@@ -1,11 +1,12 @@
 import { Anchor } from "@/components";
 import ThemeButton from "@/components/theme-button";
+import { withPage } from "@/hooks";
 import { ArrowRightIcon } from "@heroicons/react/20/solid";
 import React from "react";
 import Button from "../../components/button";
 
 const Home = () => (
-  <div className="animate-fade-in flex flex-col gap-y-24 justify-center items-center mt-[5vh] mb-[15px]">
+  <>
     <div className="flex flex-col gap-y-2 justify-center items-center">
       <h1
         id="Home"
@@ -61,7 +62,7 @@ after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-blac
         </div>
       </div>
     </div>
-  </div>
+  </>
 );
 
-export default Home;
+export default withPage(Home, "items-center gap-y-24");

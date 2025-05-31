@@ -1,5 +1,5 @@
-import { TouchEvent, useState } from "react";
-import { SwipeHook } from "./types";
+import { type TouchEvent, useState } from "react";
+import type { SwipeHook } from "./types";
 
 const useSwipe: SwipeHook = (input) => {
   const [touchStart, setTouchStart] = useState(0);

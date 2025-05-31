@@ -1,7 +1,8 @@
+import { withPage } from "@/hooks";
 import React from "react";
 
 const About = () => (
-  <div className="animate-fade-in flex flex-col gap-y-8 justify-center items-center mt-[2vh] md:mt-[5vh] mb-[15px] text-xl md:text-2xl lg:text-3xl">
+  <>
     <p className="text-left md:w-[50%]">
       Experienced Frontend Team Lead with a PhD in progress and over 4 years in
       React, TypeScript, and modern web technologies. Proven track record at
@@ -18,6 +19,7 @@ const About = () => (
       Passionate about building performant, maintainable systems and driving
       engineering excellence across large-scale applications.
     </p>
-  </div>
+  </>
 );
-export default About;
+
+export default withPage(About, "items-center text-xl md:text-2xl lg:text-3xl");

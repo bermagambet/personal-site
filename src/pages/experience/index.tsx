@@ -1,9 +1,10 @@
+import { withPage } from "@/hooks";
 import React from "react";
 import Accordeon from "../../components/accordeon";
 
 const Experience = () => {
   return (
-    <div className="animate-fade-in flex flex-col gap-y-8 justify-center items-start mt-[2vh] md:mt-[5vh] mb-[15px]">
+    <>
       <div className="flex flex-col gap-y-2">
         <p className="text-lg md:text-2xl font-semibold md:font-normal">
           <span className="font-bold">Programming languages:</span> JavaScript,
@@ -248,8 +249,8 @@ const Experience = () => {
           ]}
         />
       </div>
-    </div>
+    </>
   );
 };
 
-export default Experience;
+export default withPage(Experience, "items-start");
